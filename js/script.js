@@ -2,8 +2,16 @@
 container = document.querySelector('.mycontainer');
 const numMemory = []
 
-
 stampNum();
+setTimeout(record, 3000);
+
+
+function record() {
+
+  container.innerHTML = ``;
+  
+}
+
 
 function stampNum() {
 
