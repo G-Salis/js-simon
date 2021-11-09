@@ -1,9 +1,25 @@
 
-container = document.querySelector('.mycontainer');
-const numMemory = []
+const container = document.querySelector('.mycontainer');
+const numMemory = [];
+const myNum = [];
 
 stampNum();
+console.log('out', numMemory)
 setTimeout(record, 3000);
+setTimeout(memoryNum, 3100);
+
+
+
+
+
+function memoryNum() {
+
+  for (let i = 0; i < 5 ; i++) {
+    myNum[i] = parseInt(prompt('Digita i numeri che sono apparsi'))
+    console.log('out', myNum)
+  }
+  
+}
 
 
 function record() {
